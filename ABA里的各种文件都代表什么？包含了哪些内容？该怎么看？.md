@@ -22,6 +22,13 @@ cae（Complete Abaqus Environment）文件是Abaqus/CAE的工程数据文件，�
 
 [兵哥讲力学](https://space.bilibili.com/1206565543?spm_id_from=333.1387.follow.user_card.click)，这个我还没有看过，看过再说评价。
 
+#### 2.1.3.jnl文件
+jnl(Journal File)文件是记录了用户在Abaqus/CAE中的所有操作命令的文本文件，并按照时间顺序保存为脚本。主要用于自动重建模型、调试模型错误或批量修改参数。当cae文件意外损坏之后，可以通过播放jnl文件命令来恢复模型。此外，jnl的本质是Python脚本，而Python脚本也是参数化建模以及二次开发的起点。
+
+既然inp文件和jnl都可以进行参数化建模，那他们有什么区别，有什么联系？
+
+正如前文所述，jnl文件本质上是一个Python脚本文件，可以用于生成一个inp文件。jnl文件是利用Python生成inp文件的“途径”。
+
 ## 参考文献
 1.[Abaqus 文件后缀含义全解析：技术支持视角下的深度解读](https://blog.51cto.com/u_17266593/13712001)
 
