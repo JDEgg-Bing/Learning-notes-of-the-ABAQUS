@@ -121,7 +121,7 @@ _PickedSurf33, A-2.RigidSurface_
 ```
 这一部分设置了两类约束（Constrain）。Tie是绑定约束。绑定约束强制主面和从面上的节点在分析过程中具有相同的运动，消除主从面之间的相对位移，常用于连接不同部件或网格不匹配的区域。在Tie下，明确了该绑定的名称和是否允许adjust。adjust这个设置大家可以在Tie的设置界面看到，即调整从面节点的初始位置。当adjust=yes，ABAQUS会调整从面节点的初始位置，使从面节点在分析开始时精确位于主面上，但不改变模型的几何形状，只影响约束方程。后面跟了两个表面，前面为从面（PickedSurf33），后面为主面（“A-2.RigidSurface”）。
 
-![Screenshot](.\\images\\screenshot_Tie.png)
+![Screenshot](../images/screenshot_Tie.png)
 
 Rigid Body为刚体约束。刚体约束将一组节点或表面定义为刚性体，所有被约束的节点/表面与参考点之间保持固定的相对位置，刚体的运动完全由参考点的运动控制。参考点为在CAE里选择的节点集（PickedSet36），解析表面为（A-2.RigidSurface）
 
